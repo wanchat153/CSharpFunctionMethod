@@ -27,7 +27,8 @@ namespace CSharpFunctionMethod
         //static = Keyword ฟังก์ชันการทำงานนั้นๆ ทำงานจาก blueprint ได้เลย
         static void Main(string[] args)
         {
-            sayHelloWorld10();
+            //sayHelloWorld10();
+            Console.WriteLine(calulate());
             Console.ReadLine();
         }
 
@@ -39,6 +40,14 @@ namespace CSharpFunctionMethod
             {
                 Console.WriteLine(i + " Hello World");
             }
+        }
+
+        private static int calulate()
+        {
+            int a = 10;
+            int b = 6;
+            int sum = a + b / 2;
+            return sum;
         }
     }
 }
