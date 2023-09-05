@@ -24,8 +24,21 @@ namespace CSharpFunctionMethod
 {
     internal class Program
     {
+        //static = Keyword ฟังก์ชันการทำงานนั้นๆ ทำงานจาก blueprint ได้เลย
         static void Main(string[] args)
         {
+            sayHelloWorld10();
+            Console.ReadLine();
+        }
+
+        //private = ใช้งานเฉพาะภายใน class Program
+        //void = จะไม่ return ค่าต่างๆ ออกไปใช้งาน
+        private static void sayHelloWorld10()
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine(i + " Hello World");
+            }
         }
     }
 }
